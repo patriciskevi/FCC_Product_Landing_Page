@@ -1,0 +1,32 @@
+.slides img {
+    opacity: rgba(0, 0, 0, 0.3);
+}
+
+section {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+
+#models h2 {
+    padding-bottom: 20px;
+}
+
+
+#form-panel {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.card-button {
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.horizontal img {
+    padding: 20px;
+}
+
+.card img {
+    height: 400px;
+    object-fit: cover;
+}

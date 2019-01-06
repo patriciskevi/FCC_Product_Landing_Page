@@ -21,144 +21,289 @@
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="src/css/main.css"
-    />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
   </head>
   <body id="home" class="scrollspy">
     <!-- Header with Navbar-->
-    <header id="header">
-      <div class="navbar-fixed">
-        <ul id="dropdown1" class="dropdown-content">
-          <li><a href="#model1">Model One</a></li>
-          <li><a href="#model2">Model Two</a></li>
-          <li class="divider"></li>
-          <li><a href="#model3">Model Three</a></li>
-        </ul>
-        <nav id="nav-bar">
+    <div class="navbar-fixed">
+      <nav class="red lighten-3">
+        <div class="container">
           <div class="nav-wrapper">
-            <a href="#home" class="brand-logo">Logo</a>
+            <a href="#home" class="brand-logo"
+              ><i class="material-icons">cloud</i> Flyify</a
+            >
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
             <ul class="right hide-on-med-and-down">
               <li><a href="#about">About</a></li>
-              <li><a href="#how">How it works</a></li>
+              <li><a href="#works">How It Works</a></li>
+              <li><a href="#contact">Contact</a></li>
               <li>
-                <a
-                  class="dropdown-trigger"
-                  href="#models"
-                  data-target="dropdown1"
-                  >Models<i class="material-icons right">arrow_drop_down</i>
-                </a>
+                <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+                  >Choose Model<i class="material-icons right"
+                    >arrow_drop_down</i
+                  ></a
+                >
               </li>
-              <li><a href="#">Contact</a></li>
             </ul>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
+    </div>
 
-      <!-- Slider -->
-      <div class="slider">
-        <ul class="slides">
-          <li>
-            <img src="https://source.unsplash.com/1600x900/?drones, city" />
-            <!-- random image -->
-            <div class="caption center-align">
-              <h3>Fly Anywhere</h3>
-              <h5 class="light grey-text text-lighten-3 hide-on-small-only">
-                Our drones puts you right in the action.
-              </h5>
-            </div>
-          </li>
-          <li>
-            <img src="https://source.unsplash.com/1600x900/?drones, beach" />
-            <!-- random image -->
-            <div class="caption left-align">
-              <h3>Fly Anywhere</h3>
-              <h5 class="light grey-text text-lighten-3">
-                Our drones puts your right in the action.
-              </h5>
-            </div>
-          </li>
-          <li>
-            <img src="https://source.unsplash.com/1600x900/?drone, sport" />
-            <!-- random image -->
-            <div class="caption right-align">
-              <h3>Fly Anywhere</h3>
-              <h5 class="light grey-text text-lighten-3">
-                Our drones puts you right in the action.
-              </h5>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </header>
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#works">How It Works</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <a class="dropdown-trigger" href="#!" data-target="dropdown2"
+          >Choose Model<i class="material-icons right">arrow_drop_down</i></a
+        >
+      </li>
+    </ul>
+
+    <ul class="dropdown-content" id="dropdown1">
+      <li><a href="#model1" class="grey-text">Model 1</a></li>
+      <li><a href="#model2" class="grey-text">Model 2</a></li>
+      <li><a href="#model3" class="grey-text">Model 3</a></li>
+    </ul>
+
+    <ul class="dropdown-content" id="dropdown2">
+      <li><a href="#model1" class="grey-text">Model 1</a></li>
+      <li><a href="#model2" class="grey-text">Model 5</a></li>
+      <li><a href="#model3" class="grey-text">Model 3</a></li>
+    </ul>
+
+    <!-- Slider -->
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="drone1.jpg" />
+          <!-- random image -->
+          <div class="caption center-align">
+            <h3>Fly Anywhere</h3>
+            <h5 class="light grey-text text-lighten-3">
+              Our drones puts you right in the action.
+            </h5>
+          </div>
+        </li>
+        <li>
+          <img src="drone2.jpg" width="400" height="400" />
+          <!-- random image -->
+          <div class="caption left-align">
+            <h3>Fly Anywhere</h3>
+            <h5 class="light grey-text text-lighten-3">
+              Our drones puts your right in the action.
+            </h5>
+          </div>
+        </li>
+        <li>
+          <img src="drone3.jpg" />
+          <!-- random image -->
+          <div class="caption right-align">
+            <h3>Fly Anywhere</h3>
+            <h5 class="light grey-text text-lighten-3">
+              Our drones puts you right in the action.
+            </h5>
+          </div>
+        </li>
+      </ul>
+    </div>
 
     <!-- Section: About-->
     <section id="about" class="section scrollspy">
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="card-panel white grey-text center z-depth-2">
-            <i class="medium material-icons">people</i>
-            <h4>The team</h4>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
-              itaque omnis repudiandae vero beatae sint doloremque fugit ea
-              quibusdam natus porro earum, modi vel molestias corporis. Quae non
-              totam velit?
-            </p>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="card-panel white grey-text center z-depth-2">
+              <i class="medium material-icons">people</i>
+              <h4 class="red-text text-lighten-3">The team</h4>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
+                itaque omnis repudiandae vero beatae sint doloremque fugit ea
+                quibusdam natus porro earum, modi vel molestias corporis. Quae
+                non totam velit?
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card-panel  grey-text center z-depth-2">
-            <i class="medium material-icons">format_quote</i>
-            <h4>Our motto</h4>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
-              itaque omnis repudiandae vero beatae sint doloremque fugit ea
-              quibusdam natus porro earum, modi vel molestias corporis. Quae non
-              totam velit?
-            </p>
+          <div class="col s12 m4">
+            <div class="card-panel  grey-text center z-depth-2">
+              <i class="medium material-icons">format_quote</i>
+              <h4 class="red-text text-lighten-3">Our motto</h4>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
+                itaque omnis repudiandae vero beatae sint doloremque fugit ea
+                quibusdam natus porro earum, modi vel molestias corporis. Quae
+                non totam velit?
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card-panel grey-text center z-depth-2">
-            <i class="medium material-icons">credit_card</i>
-            <h4>Pricing model</h4>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
-              itaque omnis repudiandae vero beatae sint doloremque fugit ea
-              quibusdam natus porro earum, modi vel molestias corporis. Quae non
-              totam velit?
-            </p>
+          <div class="col s12 m4">
+            <div class="card-panel grey-text center z-depth-2">
+              <i class="medium material-icons">credit_card</i>
+              <h4 class="red-text text-lighten-3">Pricing</h4>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
+                itaque omnis repudiandae vero beatae sint doloremque fugit ea
+                quibusdam natus porro earum, modi vel molestias corporis. Quae
+                non totam velit?
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Section: How it works-->
-    <section id="works" class="section center scrollspy">
-      <video
-        src="https://www.youtube.com/watch?v=w2H07DRv2_M"
-        id="video"
-        width="720"
-        height="405"
-        controls
-      ></video>
+    <section id="works" class="section center grey lighten-4 scrollspy">
+      <div class="container">
+        <iframe
+          width="640"
+          height="360"
+          src="https://www.youtube.com/embed/QXzWhLyoHCs"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe
+        >"
+      </div>
     </section>
 
     <!-- Section: Models-->
-    section#models
+    <section id="models" class="section scrollspy">
+      <div class="container">
+        <h2 class="center red-text text-lighten-3">Our new models are here!</h2>
+        <div class="row">
+          <div class="col s12">
+            <div class="card" id="model1">
+              <div class="card-image"><img src="drone1.jpg" /></div>
+              <div class="card-content">
+                <h5 class="red-text text-lighten-3">This is the new Model 1</h5>
+                <br />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Earum, veritatis. Itaque, sint nemo? Molestias assumenda,
+                  soluta veniam velit dignissimos error?
+                </p>
+              </div>
+              <div class="card-action right-align">
+                <a class="waves-effect waves-light btn red lighten-3"
+                  ><i class="material-icons left ">short_text</i>Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <div class="card" id="model2">
+              <div class="card-image"><img src="drone2.jpg" /></div>
+              <div class="card-content">
+                <h5 class="red-text text-lighten-3">This is the new Model 2</h5>
+                <br />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Earum, veritatis. Itaque, sint nemo? Molestias assumenda,
+                  soluta veniam velit dignissimos error?
+                </p>
+              </div>
+              <div class="card-button right-align">
+                <a class="waves-effect waves-light btn red lighten-3"
+                  ><i class="material-icons left ">short_text</i>Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <div class="card horizontal" id="model3">
+              <div class="card-image"><img src="drone3.jpg" /></div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h6 class="red-text text-lighten-3">
+                    This is the new Model 3
+                  </h6>
+                  <p class="hide-on-small-only">
+                    I am a very simple card. I am good at containing small bits
+                    of information.
+                  </p>
+                </div>
+                <div class="card-button right-align">
+                  <a class="waves-effect waves-light btn red lighten-3"
+                    ><i class="material-icons left ">short_text</i>Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Contact-->
+    <section id="contact" class=" grey lighten-4 scrollspy">
+      <div class="container">
+        <div class="card-panel grey lighten-3" id="form-panel">
+          <h5 class="center-align red-text text-lighten-3">
+            Fill out this form to stay up to date!
+          </h5>
+          <div class="row">
+            <form id="form" class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="first_name" type="text" class="validate" />
+                  <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="last_name" type="text" class="validate" />
+                  <label for="last_name">Last Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="email" type="email" class="validate" validate />
+                  <label for="email">Email</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="email" type="email" class="validate" />
+                  <label for="email">Phone</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  <textarea
+                    id="textarea"
+                    class="materialize-textarea"
+                    placeholder="Enter message"
+                  ></textarea>
+                </div>
+              </div>
+              <button
+                id="submit"
+                class="btn waves-effect waves-light red lighten-3"
+                type="submit"
+                name="action"
+              >
+                Submit<i class="material-icons right">send</i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-      // Dropdown menu
-      //   $(document).ready(function() {
-      //     $(".dropdown-trigger").dropdown();
-      //   });
+      //Dropdown menu
+      const dropdown = document.querySelector(".dropdown-trigger");
+      M.Dropdown.init(dropdown, {
+        hover: false
+      });
 
       // Slider
       const slider = document.querySelector(".slider");
@@ -167,6 +312,25 @@
         height: 800,
         duration: 500,
         interval: 3000
+      });
+
+      // Sidenav
+      const sideNav = document.querySelector(".sidenav");
+      M.Sidenav.init(sideNav, {
+        inDuration: 500,
+        outDuration: 500,
+        draggable: true
+      });
+
+      // Scrollspy
+      const scrollSpy = document.querySelectorAll(".scrollspy");
+      M.ScrollSpy.init(scrollSpy, {
+        throttle: 100,
+        scrollOffset: -300,
+        activeClass: "active",
+        getActiveElement: function(id) {
+          return 'a[href="#' + id + '"]';
+        }
       });
     </script>
   </body>
