@@ -30,3 +30,26 @@ section {
     height: 400px;
     object-fit: cover;
 }
+
+
+
+.sidenav .collapsible-body {
+    padding-left: 30px;
+}
+
+.sidenav .collapsible-header {
+    padding-left: 30px;
+}
+
+< !-- -- !> //
+
+@media (max-width: 720px) {
+    iframe {
+        width: 400px;
+        height: 220px;
+    }
+
+    #form-panel {
+        width: 100%
+    }
+}

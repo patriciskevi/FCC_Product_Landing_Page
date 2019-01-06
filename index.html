@@ -59,21 +59,22 @@
       <li><a href="#works">How It Works</a></li>
       <li><a href="#contact">Contact</a></li>
       <li>
-        <a class="dropdown-trigger" href="#!" data-target="dropdown2"
-          >Choose Model<i class="material-icons right">arrow_drop_down</i></a
-        >
+        <ul class="collapsible">
+          <li>
+            <div class="collapsible-header">Models</div>
+            <div class="collapsible-body">
+              <div><a href="#model1" class="grey-text">Model 1</a></div>
+              <div><a href="#model2" class="grey-text">Model 2</a></div>
+              <div><a href="#model3" class="grey-text">Model 3</a></div>
+            </div>
+          </li>
+        </ul>
       </li>
     </ul>
 
     <ul class="dropdown-content" id="dropdown1">
       <li><a href="#model1" class="grey-text">Model 1</a></li>
       <li><a href="#model2" class="grey-text">Model 2</a></li>
-      <li><a href="#model3" class="grey-text">Model 3</a></li>
-    </ul>
-
-    <ul class="dropdown-content" id="dropdown2">
-      <li><a href="#model1" class="grey-text">Model 1</a></li>
-      <li><a href="#model2" class="grey-text">Model 5</a></li>
       <li><a href="#model3" class="grey-text">Model 3</a></li>
     </ul>
 
@@ -183,7 +184,7 @@
               <div class="card-content">
                 <h5 class="red-text text-lighten-3">This is the new Model 1</h5>
                 <br />
-                <p>
+                <p class="hide-on-small-only">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Earum, veritatis. Itaque, sint nemo? Molestias assumenda,
                   soluta veniam velit dignissimos error?
@@ -204,7 +205,7 @@
               <div class="card-content">
                 <h5 class="red-text text-lighten-3">This is the new Model 2</h5>
                 <br />
-                <p>
+                <p class="hide-on-small-only">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Earum, veritatis. Itaque, sint nemo? Molestias assumenda,
                   soluta veniam velit dignissimos error?
@@ -331,6 +332,13 @@
         getActiveElement: function(id) {
           return 'a[href="#' + id + '"]';
         }
+      });
+
+      // Collapsible
+      const collapse = document.querySelector(".collapsible");
+      M.Collapsible.init(collapse, {
+        inDuration: 500,
+        outDuration: 500
       });
     </script>
   </body>
