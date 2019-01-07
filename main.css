@@ -41,6 +41,10 @@ section {
     padding-left: 30px;
 }
 
+.inline-icon {
+    margin-left: 150px;
+}
+
 /* Media Queries*/
 
 @media (max-width: 720px) {
