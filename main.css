@@ -41,7 +41,7 @@ section {
     padding-left: 30px;
 }
 
-< !-- -- !> //
+/* Media Queries*/
 
 @media (max-width: 720px) {
     iframe {
