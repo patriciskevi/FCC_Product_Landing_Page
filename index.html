@@ -26,95 +26,103 @@
   </head>
   <body id="home" class="scrollspy">
     <!-- Header with Navbar-->
-    <div class="navbar-fixed">
-      <nav class="red lighten-3">
-        <div class="container">
-          <div class="nav-wrapper">
-            <a href="#home" class="brand-logo"
-              ><i class="material-icons">cloud</i> Flyify</a
-            >
-            <a href="#" data-target="mobile-nav" class="sidenav-trigger">
-              <i class="material-icons">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="#about">About</a></li>
-              <li><a href="#works">How It Works</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li>
-                <a class="dropdown-trigger" href="#!" data-target="dropdown1"
-                  >Choose Model<i class="material-icons right"
-                    >arrow_drop_down</i
-                  ></a
+    <div id="header">
+      <div id="nav-bar">
+        <div class="navbar-fixed">
+          <nav class="red lighten-3">
+            <div class="container">
+              <div class="nav-wrapper">
+                <a href="#home" class="brand-logo"
+                  ><i class="material-icons">cloud</i
+                  ><img id="header-img" /> Flyify</a
                 >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-
-    <ul class="sidenav" id="mobile-nav">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#works">How It Works</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li>
-        <ul class="collapsible">
-          <li>
-            <div class="collapsible-header">
-              Models
-              <i class="material-icons inline-icon">keyboard_arrow_down</i>
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                  <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                  <li class="nav-link"><a href="#about">About</a></li>
+                  <li class="nav-link"><a href="#works">How It Works</a></li>
+                  <li class="nav-link"><a href="#contact">Contact</a></li>
+                  <li>
+                    <a
+                      class="dropdown-trigger"
+                      href="#!"
+                      data-target="dropdown1"
+                      >Choose Model<i class="material-icons right"
+                        >arrow_drop_down</i
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="collapsible-body">
-              <div><a href="#model1" class="grey-text">Model 1</a></div>
-              <div><a href="#model2" class="grey-text">Model 2</a></div>
-              <div><a href="#model3" class="grey-text">Model 3</a></div>
+          </nav>
+        </div>
+      </div>
+
+      <ul class="sidenav" id="mobile-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">How It Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header">
+                Models
+                <i class="material-icons inline-icon">keyboard_arrow_down</i>
+              </div>
+              <div class="collapsible-body">
+                <div><a href="#model1" class="grey-text">Model 1</a></div>
+                <div><a href="#model2" class="grey-text">Model 2</a></div>
+                <div><a href="#model3" class="grey-text">Model 3</a></div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="dropdown-content" id="dropdown1">
+        <li><a href="#model1" class="grey-text">Model 1</a></li>
+        <li><a href="#model2" class="grey-text">Model 2</a></li>
+        <li><a href="#model3" class="grey-text">Model 3</a></li>
+      </ul>
+
+      <!-- Slider -->
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img id="header-img" src="drone1.jpg" />
+            <!-- random image -->
+            <div class="caption center-align">
+              <h3>Fly Anywhere</h3>
+              <h5 class="light grey-text text-lighten-3">
+                Our drones puts you right in the action.
+              </h5>
+            </div>
+          </li>
+          <li>
+            <img src="drone2.jpg" width="400" height="400" />
+            <!-- random image -->
+            <div class="caption left-align">
+              <h3>Fly Anywhere</h3>
+              <h5 class="light grey-text text-lighten-3">
+                Our drones puts your right in the action.
+              </h5>
+            </div>
+          </li>
+          <li>
+            <img src="drone3.jpg" />
+            <!-- random image -->
+            <div class="caption right-align">
+              <h3>Fly Anywhere</h3>
+              <h5 class="light grey-text text-lighten-3">
+                Our drones puts you right in the action.
+              </h5>
             </div>
           </li>
         </ul>
-      </li>
-    </ul>
-
-    <ul class="dropdown-content" id="dropdown1">
-      <li><a href="#model1" class="grey-text">Model 1</a></li>
-      <li><a href="#model2" class="grey-text">Model 2</a></li>
-      <li><a href="#model3" class="grey-text">Model 3</a></li>
-    </ul>
-
-    <!-- Slider -->
-    <div class="slider">
-      <ul class="slides">
-        <li>
-          <img src="drone1.jpg" />
-          <!-- random image -->
-          <div class="caption center-align">
-            <h3>Fly Anywhere</h3>
-            <h5 class="light grey-text text-lighten-3">
-              Our drones puts you right in the action.
-            </h5>
-          </div>
-        </li>
-        <li>
-          <img src="drone2.jpg" width="400" height="400" />
-          <!-- random image -->
-          <div class="caption left-align">
-            <h3>Fly Anywhere</h3>
-            <h5 class="light grey-text text-lighten-3">
-              Our drones puts your right in the action.
-            </h5>
-          </div>
-        </li>
-        <li>
-          <img src="drone3.jpg" />
-          <!-- random image -->
-          <div class="caption right-align">
-            <h3>Fly Anywhere</h3>
-            <h5 class="light grey-text text-lighten-3">
-              Our drones puts you right in the action.
-            </h5>
-          </div>
-        </li>
-      </ul>
+      </div>
     </div>
 
     <!-- Section: About-->
@@ -224,23 +232,21 @@
         </div>
         <div class="row">
           <div class="col s12">
-            <div class="card horizontal" id="model3">
+            <div class="card" id="model3">
               <div class="card-image"><img src="drone3.jpg" /></div>
-              <div class="card-stacked">
-                <div class="card-content">
-                  <h6 class="red-text text-lighten-3">
-                    This is the new Model 3
-                  </h6>
-                  <p class="hide-on-small-only">
-                    I am a very simple card. I am good at containing small bits
-                    of information.
-                  </p>
-                </div>
-                <div class="card-button right-align">
-                  <a class="waves-effect waves-light btn red lighten-3"
-                    ><i class="material-icons left ">short_text</i>Read More</a
-                  >
-                </div>
+              <div class="card-content">
+                <h5 class="red-text text-lighten-3">This is the new Model 2</h5>
+                <br />
+                <p class="hide-on-small-only">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Earum, veritatis. Itaque, sint nemo? Molestias assumenda,
+                  soluta veniam velit dignissimos error?
+                </p>
+              </div>
+              <div class="card-button right-align">
+                <a class="waves-effect waves-light btn red lighten-3"
+                  ><i class="material-icons left ">short_text</i>Read More</a
+                >
               </div>
             </div>
           </div>
@@ -330,7 +336,7 @@
       const scrollSpy = document.querySelectorAll(".scrollspy");
       M.ScrollSpy.init(scrollSpy, {
         throttle: 100,
-        scrollOffset: -300,
+        scrollOffset: 100,
         activeClass: "active",
         getActiveElement: function(id) {
           return 'a[href="#' + id + '"]';
